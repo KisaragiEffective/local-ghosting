@@ -1,0 +1,13 @@
+{
+  "name": "@kisaragieffective/local-ghosting",
+  "version": "1.0.0",
+  "description": "Mojibake converter using encoding_rs compiled to WASM",
+  "scripts": {
+    "build": "wasm-pack build --target web --out-dir pkg",
+    "build:release": "wasm-pack build --release --target web --out-dir pkg",
+    "serve": "npx --yes serve . -p 8080",
+    "dev": "npm run build && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}

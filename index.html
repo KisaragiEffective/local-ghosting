@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ばけばけ〜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>ばけばけ〜</h1>
+
+    <section id="input-section">
+      <label for="input-text">文字化けしたテキストを貼り付けてください</label>
+      <textarea id="input-text" rows="6" placeholder="ここにテキストを入力…"></textarea>
+      <button id="convert-btn">変換</button>
+    </section>
+
+    <section id="results-section" hidden>
+      <div id="src-tabs" class="tab-bar" role="tablist" aria-label="変換元エンコーディング"></div>
+      <div id="src-panels"></div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
